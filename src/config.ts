@@ -2,11 +2,14 @@ export const siteConfig = {
   name: "Ryan Fitzgerald",
   title: "Senior Software Engineer",
   description: "Portfolio website of Ryan Fitzgerald",
+  photo: "https://placehold.co/400", // Default placeholder
+  aboutMePhoto: "https://placehold.co/500", // Photo for About Me section
   accentColor: "#1d4ed8",
+  site: "https://example.com", // Add site URL for SEO (best practice)
   social: {
     email: "your-email@example.com",
     linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
+    resume: "/resume.pdf", // Path to resume PDF
     github: "https://github.com/RyanFitzgerald",
   },
   aboutMe:
@@ -87,6 +90,20 @@ export const siteConfig = {
         "Built 10+ portfolio projects",
         "Specialized in React and Node.js",
       ],
+    },
+  ],
+  courses: [
+    {
+      name: "Selected Homework 1",
+      description: "Description of the selected homework or course project.",
+      link: "#",
+      skills: ["Python", "Jupyter"],
+    },
+    {
+      name: "Selected Homework 2",
+      description: "Another course project description.",
+      link: "#",
+      skills: ["C++", "OpenGL"],
     },
   ],
 };

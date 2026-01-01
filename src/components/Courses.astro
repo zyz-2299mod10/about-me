@@ -1,11 +1,11 @@
 ---
 import { siteConfig } from "../config";
-const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
+const hasCourses = siteConfig.courses && siteConfig.courses.length > 0;
 ---
 
 {
-  hasProjects && (
-    <section id="projects" class="p-8 sm:p-12 md:p-16 lg:p-24">
+  hasCourses && (
+    <section id="courses" class="p-8 sm:p-12 md:p-16 lg:p-24">
       <div class="space-y-8 sm:space-y-12">
         <div class="flex items-center gap-4">
           <div
@@ -13,16 +13,16 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
             style={`background-color: ${siteConfig.accentColor}`}
           />
           <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">
-            Projects
+            Selected Course
           </h2>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          {siteConfig.projects.map((project, index) => {
-            const Component = project.link ? "a" : "div";
-            const linkProps = project.link
+          {siteConfig.courses.map((course, index) => {
+            const Component = course.link ? "a" : "div";
+            const linkProps = course.link
               ? {
-                  href: project.link,
+                  href: course.link,
                   target: "_blank",
                   rel: "noopener noreferrer",
                 }
@@ -33,12 +33,12 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                 <Component
                   {...linkProps}
                   class={`block relative p-6 sm:p-8 bg-gray-50 rounded-xl sm:rounded-2xl border border-gray-200 transition-all duration-300 w-full hover:-translate-y-1 ${
-                    project.link
+                    course.link
                       ? "hover:bg-white hover:shadow-xl hover:border-gray-300"
                       : ""
                   }`}
                 >
-                  {project.link && (
+                  {course.link && (
                     <div class="absolute top-6 right-6 w-10 h-10 flex items-center justify-center bg-gray-900 rounded-full text-white transition-all duration-300 group-hover:bg-gray-700 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0">
                       <svg
                         class="w-5 h-5"
@@ -58,29 +58,23 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 
                   <div class="space-y-4">
                     <div>
-                      <span
-                        class="text-sm font-mono"
-                        style={{ color: siteConfig.accentColor }}
-                      >
-                        0{index + 1}
-                      </span>
                       <h3 class="text-xl font-bold text-gray-900 mt-1">
-                        {project.name}
+                        {course.name}
                       </h3>
                     </div>
 
                     <p
                       class="text-base text-gray-600 leading-relaxed"
                     >
-                      {project.description}
+                      {course.description}
                     </p>
 
-                    {project.skills && project.skills.length > 0 && (
+                    {course.skills && course.skills.length > 0 && (
                       <div class="flex flex-wrap gap-2 pt-2">
-                        {project.skills.map((skill) => (
+                        {course.skills.map((skill) => (
                           <span
                             class={`px-3 py-1 bg-gray-900 text-white rounded-lg text-sm font-medium transition-all duration-300 ${
-                              project.link ? "group-hover:bg-gray-800" : ""
+                              course.link ? "group-hover:bg-gray-800" : ""
                             }`}
                           >
                             {skill}
