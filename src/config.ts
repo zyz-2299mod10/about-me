@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
+  name: "Yong-Zhe Zhang",
   title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
+  description: "Portfolio website of Yong-Zhe Zhang",
   photo: "https://placehold.co/400", // Default placeholder
   aboutMePhoto: "https://placehold.co/500", // Photo for About Me section
   accentColor: "#1d4ed8",
