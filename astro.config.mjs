@@ -1,15 +1,10 @@
 // @ts-check
 import { defineConfig } from "astro/config";
-// import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from "@tailwindcss/vite";
 
-// // https://astro.build/config
-// export default defineConfig({
-//   vite: {
-//     plugins: [tailwindcss()],
-//   },
-// });
-
+// https://astro.build/config
 export default defineConfig({
-  site: 'https://zyz-2299mod10.github.io',
-  base: '/about-me',
-})
+  vite: {
+    plugins: [tailwindcss()],
+  },
+});
