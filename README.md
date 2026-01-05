@@ -45,7 +45,7 @@ accentColor: "#1d4ed8", // Hex color for theme
 social: {
   email: "your-email@example.com",
   linkedin: "https://linkedin.com/in/yourprofile",
-  twitter: "https://twitter.com/yourprofile", 
+  Resume: "/data/Resume.pdf", # All data is located in the /public/data/ folder.
   github: "https://github.com/yourusername",
 }
 ```
