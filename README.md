@@ -1,7 +1,7 @@
 ## Preview
 Live **demo** [click here](https://zyz-2299mod10.github.io/about-me/)
 
-This template is heavily based on [DevPortfolio](https://github.com/RyanFitzgerald/devportfolio)
+This profile is heavily based on [DevPortfolio](https://github.com/RyanFitzgerald/devportfolio)
 
 ## Built With
 
