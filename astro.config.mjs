@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   site: "https://zyz-2299mod10.github.io",
-  base: "/me/",
+  base: "/me",
   vite: {
     plugins: [tailwindcss()],
   },
